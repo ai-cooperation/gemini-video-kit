@@ -1,6 +1,6 @@
 # 交給 agy：手機直式版（1080x1920）
 
-橫式主片已核可。現在用同一份 `work/how-to/storyboard.json`、同一支 `voice/presenter.mp4`、同一批素材，重新編排成手機直式版。**不是把橫式裁切或縮小**，每一句都要為直式重新排版。
+橫式主片已做好。現在用同一份 `work/how-to/storyboard.json`、同一支 `voice/presenter.mp4`、同一批素材，重新編排成手機直式版。**不是把橫式裁切或縮小**，每一句都要為直式重新排版。
 
 ## 要做的
 1. `scenes/mobile.html`（1080x1920），一樣由 `window.onFrame(毫秒)` 決定畫面。
