@@ -11,7 +11,7 @@
 1. 裝好並登入 agy，建一個空資料夾，在裡面開啟 agy。
 2. 貼上這句：
 
-   > 讀這個 repo 的 AGENTS.md，照它的順序帶我做一支教學影片。先問我主題、觀眾和長度，每一站做完停下來給我看。
+   > 把 https://github.com/ai-cooperation/gemini-video-kit 抓到這個資料夾，讀裡面的 AGENTS.md，照它的順序帶我做一支教學影片。先問我主題、觀眾和長度，每一站做完停下來給我看。
 
 3. 先看過 [風險](RISKS.md)。
 
@@ -22,9 +22,9 @@
 | 1 分鏡 | `storyboard.json` | agy | agy 額度 |
 | 2 圖片 | 每個鏡頭的第一格 | agy 生圖 | agy 額度 |
 | 3 影片 | 3–10 秒的鏡頭 | Google Flow，以圖片為第一格 | Flow 點數 |
-| 4 簡報 | 網頁場景錄成影片 | agy 寫網頁，本機瀏覽器逐格截圖 | 幾乎不用 |
+| 4 簡報 | 網頁場景錄成影片 | agy 寫網頁，本機瀏覽器逐格截圖 | agy 額度 |
 | 5 講師 | 旁白與講師小窗 | Colab（[colab-talking-portrait](https://github.com/ai-cooperation/colab-talking-portrait)） | Colab 運算單元 |
-| 6 剪輯 | 成片 | 本機 ffmpeg | 不用 |
+| 6 剪輯 | 成片 | agy 寫腳本，本機 ffmpeg | agy 額度 |
 
 不想放真人臉可以跳過第 5 站的小窗，只用旁白。
 
