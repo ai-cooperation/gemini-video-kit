@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<style>
+*{margin:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#faf8f4;color:#22303c;font-family:"PingFang TC","Noto Sans TC",sans-serif}
+h1{position:absolute;left:80px;top:165px;font-size:72px}
+li{position:absolute;left:80px;font-size:44px;list-style:none;opacity:0}
+/* 右下 300x300 留給講師小窗 */
+</style>
+<h1>標題</h1>
+<ul id="u"><li style="top:340px">第一點</li><li style="top:430px">第二點</li><li style="top:520px">第三點</li></ul>
+<script>
+// 每一格由錄製程式呼叫 onFrame(毫秒)。只能依時間計算，不要用 setTimeout 或 CSS animation
+window.onFrame = ms => [...document.querySelectorAll('li')].forEach((e, i) => {
+  const k = Math.min(1, Math.max(0, (ms - 600 * (i + 1)) / 400));
+  e.style.opacity = k; e.style.transform = `translateY(${(1 - k) * 20}px)`;
+});
+onFrame(0);
+</script>

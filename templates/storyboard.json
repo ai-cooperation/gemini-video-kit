@@ -1,0 +1,11 @@
+{
+ "title": "影片名稱",
+ "audience": "講給誰聽",
+ "goal": "看完要他做什麼",
+ "format": {"width": 1920, "height": 1080, "fps": 30},
+ "lines": [
+  {"id": "L1", "text": "旁白一句", "visual": "clip", "image_prompt": "第一格的描述", "motion_prompt": "怎麼動", "source": null},
+  {"id": "L2", "text": "旁白一句", "visual": "slide", "scene": "scenes/L2.html", "source": "數字或宣稱的出處"},
+  {"id": "L3", "text": "旁白一句", "visual": "real", "file": "real/demo.mp4", "source": "公開網址"}
+ ]
+}
